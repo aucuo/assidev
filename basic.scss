@@ -9,7 +9,29 @@
 }
 
 body {
+    overflow: hidden;
+}
+
+body.ready {
+    overflow: overlay;
     overflow-x: hidden;
+
+    #preloader {
+        width: 0;
+        opacity: 0;
+
+        #round1 {
+            width: 0;
+            height: 0;
+            margin: 0;
+            animation: none;
+
+            * {
+                width: 0;
+                height: 0;
+            }
+        }
+    }
 }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -40,6 +62,82 @@ img { border: 0; }
 
 a { text-decoration: none; }
 a:hover { text-decoration: underline; }
+
+// Preloader style
+#preloader {
+    z-index: 9999;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    transition: .5s;
+
+    #round1 {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 50px;
+        width: 50px;
+        margin: -25px 0 0 -25px;
+        animation: round1-rotate 2.0s infinite linear;
+    
+        span {
+            width: 30px;
+            height: 30px;
+            display: block;
+            position: absolute;
+            background-color: #267ea3;
+            border-radius: 50%;
+            animation: round1-bounce 2.0s infinite ease-in-out;
+    
+            &:nth-child(2) {
+                top: auto;
+                bottom: 0;
+                animation-delay: -1.0s;
+            }
+        }
+    }
+}
+
+@-webkit-keyframes round1-rotate {
+100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+}
+}
+@keyframes round1-rotate {
+100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+}
+}
+@-webkit-keyframes round1-bounce {
+0%, 100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+}
+50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+}
+@keyframes round1-bounce {
+0%, 100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform: scale(0);
+            transform: scale(0);
+}
+50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+}
 
 // Menu style
 #wrapper {
@@ -104,4 +202,15 @@ a:hover { text-decoration: underline; }
             }
         }
     }
+}
+
+// Scrollbar style
+::-webkit-scrollbar {
+    background: transparent;
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #175068;
+    border-radius: 7px;
 }

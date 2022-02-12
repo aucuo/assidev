@@ -22,9 +22,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script>
+        // Menu top page position
         $( window ).ready(function() {
             var scrollPos = $(window).scrollTop();
-            if (scrollPos <= 0) {
+            if (scrollPos <= 200) {
                 $('menu').addClass('top-of-page');
             } else {
                 $('menu').removeClass('top-of-page');
@@ -32,48 +33,31 @@
         });
         $(window).on("scroll", function() {
             var scrollPos = $(window).scrollTop();
-            if (scrollPos <= 0) {
+            if (scrollPos <= 200) {
                 $('menu').addClass('top-of-page');
             } else {
                 $('menu').removeClass('top-of-page');
             }
         });
 
-        // var anchors = [];
-        // var currentAnchor = -1;
-        // var isAnimating  = false;
-        // $(function(){
-        //     function updateAnchors() {
-        //         anchors = [];
-        //         $('.anchor').each(function(i, element){
-        //             anchors.push( $(element).offset().top );
-        //         });
-        //     }
-        //     $('body').on('mousewheel', function(e){
-        //         e.preventDefault();
-        //         e.stopPropagation();
-        //         if( isAnimating ) {
-        //             return false;
-        //         }
-        //         isAnimating  = true;
-        //         if( e.originalEvent.wheelDelta >= 0 ) {
-        //             currentAnchor--;
-        //         }else{
-        //             currentAnchor++;
-        //         }
-        //         if( currentAnchor > (anchors.length - 1) 
-        //            || currentAnchor < 0 ) {
-        //             currentAnchor = 0;
-        //         }
-        //         isAnimating  = true;
-        //         $('html, body').animate({
-        //             scrollTop: parseInt( anchors[currentAnchor] )
-        //         }, 500, 'swing', function(){
-        //             isAnimating  = false;
-        //         });
-        //     });
-        //     updateAnchors();   
-        // });
+        // Preloader
+        function loadData() {
+            return new Promise((resolve, reject) => {
+                // setTimeout не является частью решения
+                // Код ниже должен быть заменен на логику подходящую для решения вашей задачи
+                setTimeout(resolve, 200);
+            })
+        }
+
+        loadData()
+        .then(() => {
+            let body = document.body;
+            body.classList.add("ready");
+        });
     </script>
 
+    <!-- Animation JS library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+
     <link rel="stylesheet" href="basic.css">
+    

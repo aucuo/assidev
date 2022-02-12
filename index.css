@@ -3,6 +3,8 @@
   position: absolute;
   top: -30vh;
   left: -30vw;
+  -webkit-animation: fly 10s ease-in-out 0s infinite normal forwards;
+          animation: fly 10s ease-in-out 0s infinite normal forwards;
 }
 
 #svgGradientFirst object {
@@ -14,6 +16,8 @@
   position: absolute;
   bottom: -30vh;
   right: -30vw;
+  -webkit-animation: fly 10s ease-in-out 0s infinite normal forwards;
+          animation: fly 10s ease-in-out 0s infinite normal forwards;
 }
 
 #svgGradientSecond object {
@@ -331,5 +335,35 @@ section#fourth #information div#subscribe #subscribeWrapper form input#submitBut
   font-size: 1rem;
   font-family: Qanelas;
   letter-spacing: 1px;
+}
+
+@-webkit-keyframes fly {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  50% {
+    -webkit-transform: translate(0, 100px);
+            transform: translate(0, 100px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes fly {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  50% {
+    -webkit-transform: translate(0, 100px);
+            transform: translate(0, 100px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
 }
 /*# sourceMappingURL=index.css.map */

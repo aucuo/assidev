@@ -1,4 +1,11 @@
-<menu>
+<div id="preloader">
+    <div id="round1">
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+<menu data-aos="fade-down" class="top-of-page">
     <div id="menuLogo">
         <a href="/">
             <object type="image/svg+xml" data="logo.svg">
