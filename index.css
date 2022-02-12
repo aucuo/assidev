@@ -1,0 +1,335 @@
+#svgGradientFirst {
+  z-index: 0;
+  position: absolute;
+  top: -30vh;
+  left: -30vw;
+}
+
+#svgGradientFirst object {
+  opacity: .5;
+}
+
+#svgGradientSecond {
+  z-index: 0;
+  position: absolute;
+  bottom: -30vh;
+  right: -30vw;
+}
+
+#svgGradientSecond object {
+  opacity: .5;
+}
+
+section#first {
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  height: 100vh;
+}
+
+section#first #sign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section#first #sign span {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 10px 0;
+  letter-spacing: 2px;
+}
+
+section#first #sign span#border {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 15px;
+}
+
+section#first #sign span#thin {
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+section#first #image {
+  width: 400px;
+}
+
+section#first #image object {
+  height: auto;
+}
+
+section#second, section#third {
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 70%;
+  height: 100vh;
+}
+
+section#second #sectionHeader, section#third #sectionHeader {
+  display: block;
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 0 0 40px 0;
+}
+
+section#second #information, section#third #information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column-wrap;
+          flex-flow: column-wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section#second #information div, section#third #information div {
+  width: 35%;
+  padding: 30px 0;
+}
+
+section#second #information div span, section#third #information div span {
+  font-size: 1.3rem;
+  font-weight: 200;
+  letter-spacing: 1px;
+  line-height: 33px;
+}
+
+section#second #information div #header, section#third #information div #header {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+
+section#second #information div#subscribe, section#third #information div#subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  background: #fff;
+  border-radius: 30px;
+}
+
+section#second #information div#subscribe #header, section#third #information div#subscribe #header {
+  width: 100%;
+  font-size: 2rem;
+  margin: 0 0 20px 0;
+}
+
+section#second #information div#subscribe #subscribeWrapper, section#third #information div#subscribe #subscribeWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
+  padding: 0 10%;
+}
+
+section#second #information div#subscribe #subscribeWrapper *, section#third #information div#subscribe #subscribeWrapper * {
+  color: #000;
+}
+
+section#second #information div#subscribe #subscribeWrapper form, section#third #information div#subscribe #subscribeWrapper form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+
+section#second #information div#subscribe #subscribeWrapper form input, section#third #information div#subscribe #subscribeWrapper form input {
+  margin: 10px 0;
+}
+
+section#second #information div#subscribe #subscribeWrapper form input:first-child, section#third #information div#subscribe #subscribeWrapper form input:first-child {
+  width: 100%;
+  padding: 15px 20px;
+  border: solid 1px #464646;
+  border-radius: 30px;
+}
+
+section#second #information div#subscribe #subscribeWrapper form input:last-child, section#third #information div#subscribe #subscribeWrapper form input:last-child {
+  width: auto;
+  position: relative;
+  bottom: 0;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 30px;
+  margin: 0;
+  font-weight: 200;
+  font-size: 1rem;
+  font-family: Qanelas;
+  letter-spacing: 1px;
+}
+
+section#fourth {
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 70%;
+  height: 100vh;
+}
+
+section#fourth #sectionHeader {
+  display: block;
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 0 0 40px 0;
+}
+
+section#fourth #information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column-wrap;
+          flex-flow: column-wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section#fourth #information div {
+  width: 35%;
+  padding: 30px 0;
+}
+
+section#fourth #information div span {
+  font-size: 1.3rem;
+  font-weight: 200;
+  letter-spacing: 1px;
+  line-height: 33px;
+}
+
+section#fourth #information div #header {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+
+section#fourth #information div#subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  background: #fff;
+  border-radius: 30px;
+}
+
+section#fourth #information div#subscribe #header {
+  width: 100%;
+  font-size: 2rem;
+  margin: 0 0 20px 0;
+}
+
+section#fourth #information div#subscribe #subscribeWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
+  padding: 0 10%;
+}
+
+section#fourth #information div#subscribe #subscribeWrapper * {
+  color: #000;
+}
+
+section#fourth #information div#subscribe #subscribeWrapper form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+
+section#fourth #information div#subscribe #subscribeWrapper form input {
+  margin: 10px 0;
+  width: 100%;
+  padding: 15px 20px;
+  border: solid 1px #464646;
+  border-radius: 30px;
+}
+
+section#fourth #information div#subscribe #subscribeWrapper form input#submitButton {
+  width: auto;
+  position: relative;
+  bottom: 0;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 30px;
+  margin: 0;
+  font-weight: 200;
+  font-size: 1rem;
+  font-family: Qanelas;
+  letter-spacing: 1px;
+}
+/*# sourceMappingURL=index.css.map */

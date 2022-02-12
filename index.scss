@@ -1,0 +1,273 @@
+#svgGradientFirst {
+    z-index: 0;
+    position: absolute;
+    top: -30vh;
+    left: -30vw;
+
+    object {
+        opacity: .5;
+    }
+}
+
+#svgGradientSecond {
+    z-index: 0;
+    position: absolute;
+    bottom: -30vh;
+    right: -30vw;
+
+    object {
+        opacity: .5;
+    }
+}
+
+// Sections syle
+section#first {
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height: 100vh;
+
+    #sign {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        span {
+            width: fit-content;
+            font-size: 3rem;
+            font-weight: 600;
+            margin: 10px 0;
+            letter-spacing: 2px;
+    
+            &#border {
+                border-bottom: 1px solid #fff;
+                padding-bottom: 15px;
+            }
+
+            &#thin {
+                font-size: 2rem;
+                font-weight: 200;
+            }
+        }
+    }
+
+    #image {
+        width: 400px;
+
+        object {
+            height: auto;
+        }
+    }
+
+}
+
+section#second, section#third {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    flex-wrap: wrap;
+    width: 70%;
+    height: 100vh;
+
+    #sectionHeader {
+        display: block;
+        font-size: 3rem;
+        font-weight: 600;
+        margin: 0 0 40px 0;
+    }
+
+    #information {
+        display: flex;
+        flex-flow: column-wrap;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        div {
+            width: 35%;
+            padding: 30px 0;
+
+            span {
+                font-size: 1.3rem;
+                font-weight: 200;
+                letter-spacing: 1px;
+                line-height: 33px;
+            }
+
+            #header {
+                display: block;
+                font-size: 1.5rem;
+                font-weight: 600;
+                margin: 0 0 10px 0;
+            }
+
+            &#subscribe {
+                display: flex;
+                align-content: space-between;
+                background: #fff;
+                border-radius: 30px;
+
+                #header {
+                    width: 100%;
+                    font-size: 2rem;
+                    margin: 0 0 20px 0;
+                }
+
+                #subscribeWrapper {
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 80%;
+                    padding: 0 10%;
+                    
+                    
+                    * {
+                        color: #000;
+                    }
+
+                    form {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-content: space-between;
+                        position: relative;
+                        bottom: 0;
+                        width: 100%;
+                        height: auto;
+
+                        input {
+                            margin: 10px 0;
+
+                            &:first-child {
+                                width: 100%;
+                                padding: 15px 20px;
+                                border: solid 1px rgb(70, 70, 70);
+                                border-radius: 30px;
+                            }
+    
+                            &:last-child {
+                                width: auto;
+                                position: relative;
+                                bottom: 0;
+                                background: #000;
+                                color: #fff;
+                                border: none;
+                                padding: 15px 20px;
+                                border-radius: 30px;
+                                margin: 0;
+                                font-weight: 200;
+                                font-size: 1rem;
+                                font-family: Qanelas;
+                                letter-spacing: 1px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+section#fourth {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    flex-wrap: wrap;
+    width: 70%;
+    height: 100vh;
+
+    #sectionHeader {
+        display: block;
+        font-size: 3rem;
+        font-weight: 600;
+        margin: 0 0 40px 0;
+    }
+    
+    #information {
+        display: flex;
+        flex-flow: column-wrap;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        div {
+            width: 35%;
+            padding: 30px 0;
+
+            span {
+                font-size: 1.3rem;
+                font-weight: 200;
+                letter-spacing: 1px;
+                line-height: 33px;
+            }
+
+            #header {
+                display: block;
+                font-size: 1.5rem;
+                font-weight: 600;
+                margin: 0 0 10px 0;
+            }
+
+            &#subscribe {
+                display: flex;
+                align-content: space-between;
+                background: #fff;
+                border-radius: 30px;
+
+                #header {
+                    width: 100%;
+                    font-size: 2rem;
+                    margin: 0 0 20px 0;
+                }
+
+                #subscribeWrapper {
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 80%;
+                    padding: 0 10%;
+                    
+                    
+                    * {
+                        color: #000;
+                    }
+
+                    form {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-content: space-between;
+                        position: relative;
+                        bottom: 0;
+                        width: 100%;
+                        height: auto;
+
+                        input {
+                            margin: 10px 0;
+                            width: 100%;
+                            padding: 15px 20px;
+                            border: solid 1px rgb(70, 70, 70);
+                            border-radius: 30px;
+                            
+    
+                            &#submitButton {
+                                width: auto;
+                                position: relative;
+                                bottom: 0;
+                                background: #000;
+                                color: #fff;
+                                border: none;
+                                padding: 15px 20px;
+                                border-radius: 30px;
+                                margin: 0;
+                                font-weight: 200;
+                                font-size: 1rem;
+                                font-family: Qanelas;
+                                letter-spacing: 1px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
