@@ -248,6 +248,8 @@ section#fourth #information {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
 }
 
 section#fourth #information div {
@@ -269,37 +271,55 @@ section#fourth #information div #header {
   margin: 0 0 10px 0;
 }
 
-section#fourth #information div#subscribe {
+section#fourth #information div#contacts {
+  padding: 0;
+}
+
+section#fourth #information div#contacts * {
+  width: 100%;
+}
+
+section#fourth #information div#contacts #iconsItemWrapper span#header {
+  margin: 0 0 20px 0;
+}
+
+section#fourth #information div#contacts #iconsItemWrapper #icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
-  background: #fff;
-  border-radius: 30px;
+  padding: 0;
 }
 
-section#fourth #information div#subscribe #header {
+section#fourth #information div#contacts #iconsItemWrapper #icons * {
+  width: 50px;
+  height: 50px;
+  margin: 0 20px 0 0;
+}
+
+section#fourth #information div#contactForm {
+  padding: 0;
+}
+
+section#fourth #information div#contactForm #header {
   width: 100%;
   font-size: 2rem;
   margin: 0 0 20px 0;
 }
 
-section#fourth #information div#subscribe #subscribeWrapper {
+section#fourth #information div#contactForm #contactWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 80%;
-  padding: 0 10%;
+  width: 100%;
 }
 
-section#fourth #information div#subscribe #subscribeWrapper * {
-  color: #000;
+section#fourth #information div#contactForm #contactWrapper * {
+  color: #fff;
 }
 
-section#fourth #information div#subscribe #subscribeWrapper form {
+section#fourth #information div#contactForm #contactWrapper form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -313,21 +333,47 @@ section#fourth #information div#subscribe #subscribeWrapper form {
   height: auto;
 }
 
-section#fourth #information div#subscribe #subscribeWrapper form input {
+section#fourth #information div#contactForm #contactWrapper form textarea {
+  resize: vertical;
+  min-height: 20px;
+  max-height: 300px;
+}
+
+section#fourth #information div#contactForm #contactWrapper form textarea::-webkit-scrollbar-thumb {
+  border: #fff solid 1px;
+  background: none;
+}
+
+section#fourth #information div#contactForm #contactWrapper form textarea::-webkit-scrollbar-corner {
+  background: none;
+}
+
+section#fourth #information div#contactForm #contactWrapper form input, section#fourth #information div#contactForm #contactWrapper form textarea {
   margin: 10px 0;
   width: 100%;
   padding: 15px 20px;
-  border: solid 1px #464646;
+  border: solid 1px #fff;
+  background: none;
   border-radius: 30px;
 }
 
-section#fourth #information div#subscribe #subscribeWrapper form input#submitButton {
+section#fourth #information div#contactForm #contactWrapper form input#messageInput, section#fourth #information div#contactForm #contactWrapper form textarea#messageInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  height: auto;
+}
+
+section#fourth #information div#contactForm #contactWrapper form input#submitButton, section#fourth #information div#contactForm #contactWrapper form textarea#submitButton {
   width: auto;
   position: relative;
   bottom: 0;
-  background: #000;
+  background: none;
+  border: #fff solid;
   color: #fff;
-  border: none;
+  border: solid 1px #fff;
   padding: 15px 20px;
   border-radius: 30px;
   margin: 0;
@@ -335,6 +381,11 @@ section#fourth #information div#subscribe #subscribeWrapper form input#submitBut
   font-size: 1rem;
   font-family: Qanelas;
   letter-spacing: 1px;
+}
+
+section#fourth #information div#contactForm #contactWrapper form input#submitButton:hover, section#fourth #information div#contactForm #contactWrapper form textarea#submitButton:hover {
+  background: #1a1a1a;
+  cursor: pointer;
 }
 
 @-webkit-keyframes fly {

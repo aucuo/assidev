@@ -191,6 +191,7 @@ section#fourth {
         flex-flow: column-wrap;
         flex-wrap: wrap;
         justify-content: space-between;
+        align-content: stretch;
 
         div {
             width: 35%;
@@ -210,11 +211,33 @@ section#fourth {
                 margin: 0 0 10px 0;
             }
 
-            &#subscribe {
-                display: flex;
-                align-content: space-between;
-                background: #fff;
-                border-radius: 30px;
+            &#contacts {
+                padding: 0;
+
+                * {
+                    width: 100%;
+                }
+
+                #iconsItemWrapper {
+                    span#header {
+                        margin: 0 0 20px 0;
+                    }
+
+                    #icons {
+                        display: flex;
+                        padding: 0;
+
+                        * {
+                            width: 50px;
+                            height: 50px;
+                            margin: 0 20px 0 0;
+                        }
+                    }
+                }
+            }
+
+            &#contactForm {
+                padding: 0;
 
                 #header {
                     width: 100%;
@@ -222,15 +245,14 @@ section#fourth {
                     margin: 0 0 20px 0;
                 }
 
-                #subscribeWrapper {
+                #contactWrapper {
                     display: flex;
                     flex-wrap: wrap;
-                    width: 80%;
-                    padding: 0 10%;
+                    width: 100%;
                     
                     
                     * {
-                        color: #000;
+                        color: #fff;
                     }
 
                     form {
@@ -242,21 +264,43 @@ section#fourth {
                         width: 100%;
                         height: auto;
 
-                        input {
+                        textarea {
+                            resize: vertical;
+                            min-height: 20px;
+                            max-height: 300px;
+
+                            &::-webkit-scrollbar-thumb {
+                                border: #fff solid 1px;
+                                background: none;
+                            }
+
+                            &::-webkit-scrollbar-corner{
+                                background: none;
+                            }
+                        }
+
+                        input, textarea {
                             margin: 10px 0;
                             width: 100%;
                             padding: 15px 20px;
-                            border: solid 1px rgb(70, 70, 70);
+                            border: solid 1px #fff;
+                            background: none;
                             border-radius: 30px;
-                            
+
+                            &#messageInput {
+                                display: flex;
+                                align-content: stretch;
+                                height: auto;
+                            }                            
     
                             &#submitButton {
                                 width: auto;
                                 position: relative;
                                 bottom: 0;
-                                background: #000;
+                                background: none;
+                                border: #fff solid;
                                 color: #fff;
-                                border: none;
+                                border: solid 1px #fff;
                                 padding: 15px 20px;
                                 border-radius: 30px;
                                 margin: 0;
@@ -264,6 +308,11 @@ section#fourth {
                                 font-size: 1rem;
                                 font-family: Qanelas;
                                 letter-spacing: 1px;
+
+                                &:hover {
+                                    background: #1a1a1a;
+                                    cursor: pointer;
+                                }
                             }
                         }
                     }
@@ -284,4 +333,4 @@ section#fourth {
     100% {
       transform: translate(0);
     }
-  }
+}

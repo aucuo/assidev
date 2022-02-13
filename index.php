@@ -1,7 +1,6 @@
     <? echo file_get_contents('basic.php'); // Стандартное оформление страницы ?>
 
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="/fonts/stylesheet.css">
 </head>
 <body>
     <div id="svgGradientFirst">
@@ -19,7 +18,7 @@
 
         <section id="first" class="anchor">
             <div id="sign" data-aos="fade-right">
-                <span>Assistment developent</span>
+                <span>Assistment development</span>
                 <span id="border">for Telegram</span>
                 <span id="thin">Bots & Automation</span>
             </div>
@@ -33,15 +32,15 @@
         <section id="second" class="anchor"> 
             <span id="sectionHeader" data-aos="fade-right">About us</span>
             <div id="information">
-                <div id="waw" data-aos="fade-up">
+                <div class="item" data-aos="fade-up">
                     <span id="header">Who we are?</span>
                     <span>We are a group of people with a geniue interest in computer programming. We made this company to help small and big business companies to grow. All our products may have help your company in many spheres.</span>
                 </div>
-                <div id="waoi" data-aos="fade-up">
+                <div class="item" data-aos="fade-up">
                     <span id="header">What are our interest?</span>
                     <span>We are interested in all things, that we can automatize. We have great experience in making bots.</span>
                 </div>
-                <div id="wyctu" data-aos="fade-up">
+                <div class="item" data-aos="fade-up">
                     <span id="header">Why you can trust us?</span>
                     <span>We have small, but experienced team. Our motto is “practice makes perfect”. There are UI/UX designers, programmers, marketers in our team.</span>
                 </div>
@@ -60,19 +59,19 @@
         <section id="third" class="anchor">
             <span id="sectionHeader" data-aos="fade-right">Why Assidev?</span>
             <div id="information">
-                <div id="sym" data-aos="fade-up">
+                <div class="item" data-aos="fade-up">
                     <span id="header">Save your money</span>
                     <span>Intelligent automation has saved significant amounts of money for our customers.</span>
                 </div>
-                <div id="tsr" data-aos="fade-up">
+                <div class="item" data-aos="fade-up">
                     <span id="header">The same results</span>
                     <span>The functions of bots can be the same as functions of apps.</span>
                 </div>
-                <div id="stu" data-aos="fade-up">
+                <div class="item" data-aos="fade-up">
                     <span id="header">Simple to use</span>
                     <span>Our solutions are easy to use because most of our production solutions are code-less. </span>
                 </div>
-                <div id="fac" data-aos="fade-up">
+                <div class="item" data-aos="fade-up">
                     <span id="header">Fast & cheap</span>
                     <span>Order a bot is the fastest way to get all functions of app faster and cheaper.</span>
                 </div>
@@ -85,7 +84,7 @@
                         </form>
                     </div>
                 </div>
-                <div id="hyc" data-aos="fade-up">
+                <div class="item" data-aos="fade-up">
                     <span id="header">Help your company</span>
                     <span>Some of our customers have been able to speed up their processes up and generate new profits.</span>
                 </div>
@@ -93,44 +92,51 @@
         </section>
 
         <section id="fourth" class="anchor">
-            <span id="sectionHeader">Contact us</span>
+            <span id="sectionHeader" data-aos="fade-right">Contact us</span>
             <div id="information">
-                <div id="subscribe">
-                    <div id="subscribeWrapper">
+                <div id="contactForm" data-aos="fade-left">
+                    <div id="contactWrapper">
                         <span id="header">We`ll write you ASAP</span>
                         <form action="">
                             <input id="emailInput" type="text" placeholder="Your e-mail">
-                            <input id="" type="text" placeholder="Message">
+                            <textarea id="messageInput" type="text" placeholder="Message" rows="4" cols="50"></textarea>
                             <input id="submitButton" type="submit" value="Submit">
                         </form>
                     </div>
                 </div>
-                <div id="waw">
-                    <span id="header">Who we are?</span>
-                    <span>We are a group of people with a geniue interest in computer programming. We made this company to help small and big business companies to grow. All our products may have help your company in many spheres.</span>
-                </div>
-                <div id="waoi">
-                    <span id="header">What are our interest?</span>
-                    <span>We are interested in all things, that we can automatize. We have great experience in making bots.</span>
-                </div>
-                <div id="wyctu">
-                    <span id="header">Why you can trust us?</span>
-                    <span>We have small, but experienced team. Our motto is “practice makes perfect”. There are UI/UX designers, programmers, marketers in our team.</span>
+                <div id="contacts" data-aos="fade-up">
+                    <div class="item">
+                        <span id="header">Our e-mail</span>
+                        <span><a href="mailto:assidev.company@gmail.com">assidev.company@gmail.com</a></span>
+                    </div>
+                    <div class="item" id="iconsItemWrapper">
+                        <span id="header">You can also see us in</span>
+                        <div id="icons">
+                        <a href="">
+                            <object type="image/svg+xml" data="logoBorder.svg"> 
+                                <img src="/media/iconmonstr-instagram.svg">
+                            </object>
+                        </a>
+                        <a href="">
+                            <object type="image/svg+xml" data="logoBorder.svg"> 
+                                <img src="/media/iconmonstr-telegram.svg">
+                            </object>
+                        </a>
+                        <a href="">
+                            <object type="image/svg+xml" data="logoBorder.svg"> 
+                                <img src="/media/iconmonstr-twitter.svg">
+                            </object>
+                        </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- 
             TODO:
-            > Скроллбар
-            > Прокрутка градиента (паралакс)
-            > Анимация на скролл
-            > Доделать contact us на index.php
-
-            Поблочная прокрутка*
-            Страницы сайта
-            Адаптировать под мобильные устройства
-            Иллюстрация для about.php
+            > Страницы сайта
+            > Адаптировать под мобильные устройства
         -->
     </div>
 

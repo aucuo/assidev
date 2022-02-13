@@ -43,8 +43,6 @@
         // Preloader
         function loadData() {
             return new Promise((resolve, reject) => {
-                // setTimeout не является частью решения
-                // Код ниже должен быть заменен на логику подходящую для решения вашей задачи
                 setTimeout(resolve, 200);
             })
         }
@@ -60,4 +58,5 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
 
     <link rel="stylesheet" href="basic.css">
+    <link rel="stylesheet" href="/fonts/stylesheet.css">
     
